@@ -1,0 +1,35 @@
+:root{
+  --bg:#f7f7fb; --text:#17202a; --muted:#556; --accent:#0b76ef; --card:#ffffff;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;margin:0;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
+.container{max-width:1000px;margin:0 auto;padding:24px}
+.site-header{background:linear-gradient(90deg,#0b76ef22,#083f7710);padding:18px 0}
+.site-header h1{margin:0;font-size:1.4rem}
+.tag{margin:6px 0 0;color:var(--muted)}
+.cta-row{margin-top:10px}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;background:transparent;border:1px solid #ddd;color:var(--text);margin-right:8px}
+.btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+.hero{padding:28px 0}
+.hero-inner{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.hero-text{flex:1;min-width:260px}
+.hero-img{flex:1;max-width:480px;width:100%;border-radius:8px;object-fit:cover}
+h2{margin-top:0}
+.muted{color:var(--muted)}
+.price-table{width:100%;border-collapse:collapse;background:var(--card);box-shadow:0 6px 18px rgba(20,30,40,0.06);border-radius:8px;overflow:hidden}
+.price-table th,.price-table td{padding:12px 14px;text-align:left;border-bottom:1px solid #f0f0f4}
+.price-table thead th{background:#fafbfd;font-weight:600}
+.note{margin-top:8px;color:#333}
+.how-it-works ol{padding-left:1.1rem}
+.contact-list{list-style:none;padding:0}
+.contact-list li{margin-bottom:6px}
+.booking{margin-top:12px}
+.lead{font-weight:600}
+.site-footer{padding:18px 0;text-align:center;color:var(--muted);margin-top:28px}
+.small{font-size:0.9rem}
+
+@media (max-width:720px){
+  .hero-inner{flex-direction:column}
+  .hero-img{max-width:100%}
+  .container{padding:16px}
+}
